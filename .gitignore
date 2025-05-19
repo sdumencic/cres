@@ -1,0 +1,7 @@
+marker_advection/advection_results_dir
+marker_advection/case_Cres_v5
+marker_advection/data_dir
+marker_advection/template_dir
+__pycache__
+
+*.zip
