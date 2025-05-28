@@ -25,7 +25,7 @@ def advect_marker_locations(case_dir, advection_time_step, data_dir, advection_r
 
     advected_locations = []  # to store final positions
 
-    sub_step = 5 # in order to check velocity field every 5 seconds
+    sub_step = 1 # in order to check velocity field every 5 seconds
     n_sub_steps = advection_time_step // sub_step
     for i, initial_position in enumerate(location_array):
         # start with the initial position
@@ -54,13 +54,13 @@ def advect_marker_locations(case_dir, advection_time_step, data_dir, advection_r
 
 if __name__ == '__main__':
 
-    data_dir = f'D:/cres/marker_advection/data_dir' # measurements in npz format
-    case_dir = f'D:/cres/marker_advection/template_dir/case_Cres' # OpenFOAM case
-    advection_results_dir = f'D:/cres/marker_advection/advection_results_dir' # advected marker locations
+    data_dir = f'C:/Users/stella/Documents/cres/marker_advection/data_dir' # measurements in npz format
+    case_dir = f'C:/Users/stella/Documents/cres/marker_advection/template_dir/case_Cres' # OpenFOAM case
+    advection_results_dir = f'C:/Users/stella/Documents/cres/marker_advection/advection_results_dir' # advected marker locations
     advection_time_step = 600 # desired advection time step
 
     gaussian_noise=False
-    advect_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir)
+    advect_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir, 1)
 
 
 
