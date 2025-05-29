@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b359a5b0057a940749243ab3fa6b4d62 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b359a5b0057a940749243ab3fa6b4d62" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b359a5b0057a940749243ab3fa6b4d62 = L.map(
+                "map_b359a5b0057a940749243ab3fa6b4d62",
+                {
+                    center: [45.11793343372731, 14.197035544286058],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_babf2c0fa70ba08427153fb9a69b5e8a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_babf2c0fa70ba08427153fb9a69b5e8a.addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var marker_06bc36c4effb27b100f7f2e75f92d403 = L.marker(
+                [45.11750351933497, 14.20057182705633],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_356ce36325d671cbadfaeff395da84c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d01adc877e2537e9d0d7033eb07578d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2738f3675b390486c7448168cff7ee9 = $(`<div id="html_d2738f3675b390486c7448168cff7ee9" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0042.JPG</div>`)[0];
+                popup_8d01adc877e2537e9d0d7033eb07578d.setContent(html_d2738f3675b390486c7448168cff7ee9);
+            
+        
+
+        marker_06bc36c4effb27b100f7f2e75f92d403.bindPopup(popup_8d01adc877e2537e9d0d7033eb07578d)
+        ;
+
+        
+    
+    
+                marker_06bc36c4effb27b100f7f2e75f92d403.setIcon(icon_356ce36325d671cbadfaeff395da84c9);
+            
+    
+            var marker_eeb0aaab2016487a266c86900ff9edf4 = L.marker(
+                [45.11683923332213, 14.19855032573761],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_7cf82d193a8c427d326ccaaad9384921 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6c696acd1f40eb197e271d0738016f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c95d3615fd5de6cf32ffc507a255913 = $(`<div id="html_6c95d3615fd5de6cf32ffc507a255913" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0065.JPG</div>`)[0];
+                popup_dd6c696acd1f40eb197e271d0738016f.setContent(html_6c95d3615fd5de6cf32ffc507a255913);
+            
+        
+
+        marker_eeb0aaab2016487a266c86900ff9edf4.bindPopup(popup_dd6c696acd1f40eb197e271d0738016f)
+        ;
+
+        
+    
+    
+                marker_eeb0aaab2016487a266c86900ff9edf4.setIcon(icon_7cf82d193a8c427d326ccaaad9384921);
+            
+    
+            var marker_78554967fb14d95cf30f9bbe3f16ab07 = L.marker(
+                [45.11701043240316, 14.19880331485251],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_14fc3a4a27c6d5eec5ca1f9dc56821a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af53d8f6cc183d6b79908b8b89af8a12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edada1b5bbf2fdc86f03fc374308da1f = $(`<div id="html_edada1b5bbf2fdc86f03fc374308da1f" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0071.JPG</div>`)[0];
+                popup_af53d8f6cc183d6b79908b8b89af8a12.setContent(html_edada1b5bbf2fdc86f03fc374308da1f);
+            
+        
+
+        marker_78554967fb14d95cf30f9bbe3f16ab07.bindPopup(popup_af53d8f6cc183d6b79908b8b89af8a12)
+        ;
+
+        
+    
+    
+                marker_78554967fb14d95cf30f9bbe3f16ab07.setIcon(icon_14fc3a4a27c6d5eec5ca1f9dc56821a4);
+            
+    
+            var marker_76fdaf2e5ae704fdc92e67b547fceb70 = L.marker(
+                [45.1179023534871, 14.20006524926029],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_592c55c0cf47e65acd4ec7158b6b8f52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_971d677f1b36af4072ab1b805b52adde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e6e9d428a6e5b207f059b1676881dd1 = $(`<div id="html_4e6e9d428a6e5b207f059b1676881dd1" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0079.JPG</div>`)[0];
+                popup_971d677f1b36af4072ab1b805b52adde.setContent(html_4e6e9d428a6e5b207f059b1676881dd1);
+            
+        
+
+        marker_76fdaf2e5ae704fdc92e67b547fceb70.bindPopup(popup_971d677f1b36af4072ab1b805b52adde)
+        ;
+
+        
+    
+    
+                marker_76fdaf2e5ae704fdc92e67b547fceb70.setIcon(icon_592c55c0cf47e65acd4ec7158b6b8f52);
+            
+    
+            var marker_f7d21a33bd4595df95aa1ad0568882c2 = L.marker(
+                [45.11723994020792, 14.19967910233451],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_fbb91f8f03cfbc93d824a76d781ba06b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02b537e584fa675b2e0d7552d10c94c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6d6cb6d679e3d90c2aee9f581eabf75 = $(`<div id="html_e6d6cb6d679e3d90c2aee9f581eabf75" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0110.JPG</div>`)[0];
+                popup_02b537e584fa675b2e0d7552d10c94c9.setContent(html_e6d6cb6d679e3d90c2aee9f581eabf75);
+            
+        
+
+        marker_f7d21a33bd4595df95aa1ad0568882c2.bindPopup(popup_02b537e584fa675b2e0d7552d10c94c9)
+        ;
+
+        
+    
+    
+                marker_f7d21a33bd4595df95aa1ad0568882c2.setIcon(icon_fbb91f8f03cfbc93d824a76d781ba06b);
+            
+    
+            var marker_33f68805ad0472c18d381a5bba03a2aa = L.marker(
+                [45.11746079473788, 14.19959709655333],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_38469ccd2759f55a0bd24962395bc7a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c84d79707a8d4e9df2cded9bdf505996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1408fb70741d212cf3615d1790962d26 = $(`<div id="html_1408fb70741d212cf3615d1790962d26" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0112.JPG</div>`)[0];
+                popup_c84d79707a8d4e9df2cded9bdf505996.setContent(html_1408fb70741d212cf3615d1790962d26);
+            
+        
+
+        marker_33f68805ad0472c18d381a5bba03a2aa.bindPopup(popup_c84d79707a8d4e9df2cded9bdf505996)
+        ;
+
+        
+    
+    
+                marker_33f68805ad0472c18d381a5bba03a2aa.setIcon(icon_38469ccd2759f55a0bd24962395bc7a7);
+            
+    
+            var marker_c79ffc5622f87da64557f8ad63e490a4 = L.marker(
+                [45.11733190723356, 14.19944645701757],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_9f85caa969d093eb2141adf2cd4adb46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6491fab5b47c1ec6be6a26ca22e13488 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_907261672b509b3855f690e49a897ded = $(`<div id="html_907261672b509b3855f690e49a897ded" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0114.JPG</div>`)[0];
+                popup_6491fab5b47c1ec6be6a26ca22e13488.setContent(html_907261672b509b3855f690e49a897ded);
+            
+        
+
+        marker_c79ffc5622f87da64557f8ad63e490a4.bindPopup(popup_6491fab5b47c1ec6be6a26ca22e13488)
+        ;
+
+        
+    
+    
+                marker_c79ffc5622f87da64557f8ad63e490a4.setIcon(icon_9f85caa969d093eb2141adf2cd4adb46);
+            
+    
+            var marker_17605b54bfb7a5fd42cb66193cdca91b = L.marker(
+                [45.11728935760379, 14.19915785897347],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_5d7b3f5bfddc81e248883a6ea90f41ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c4f63b98e44ea168232a6c533e6af1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_848d47084d74dd457e0aa7818787a1c0 = $(`<div id="html_848d47084d74dd457e0aa7818787a1c0" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0118.JPG</div>`)[0];
+                popup_3c4f63b98e44ea168232a6c533e6af1d.setContent(html_848d47084d74dd457e0aa7818787a1c0);
+            
+        
+
+        marker_17605b54bfb7a5fd42cb66193cdca91b.bindPopup(popup_3c4f63b98e44ea168232a6c533e6af1d)
+        ;
+
+        
+    
+    
+                marker_17605b54bfb7a5fd42cb66193cdca91b.setIcon(icon_5d7b3f5bfddc81e248883a6ea90f41ab);
+            
+    
+            var marker_7f0612ffb4ac4a65deb8609bd2d1d64c = L.marker(
+                [45.11756581979338, 14.19884412167305],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_e804a95d2d4d29eefb90edebf00539e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7634b734800c04885873b5216923ecf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74b34c9dfe1348ed5a982f5badf4a96c = $(`<div id="html_74b34c9dfe1348ed5a982f5badf4a96c" style="width: 100.0%; height: 100.0%;">flight_1_DJI_0125.JPG</div>`)[0];
+                popup_7634b734800c04885873b5216923ecf1.setContent(html_74b34c9dfe1348ed5a982f5badf4a96c);
+            
+        
+
+        marker_7f0612ffb4ac4a65deb8609bd2d1d64c.bindPopup(popup_7634b734800c04885873b5216923ecf1)
+        ;
+
+        
+    
+    
+                marker_7f0612ffb4ac4a65deb8609bd2d1d64c.setIcon(icon_e804a95d2d4d29eefb90edebf00539e0);
+            
+    
+            var marker_633309edbda941988decdd1437343860 = L.marker(
+                [45.11767124788673, 14.19576137247486],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_3302ee4f2b4cd06c358352e5dadaed8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fc92e4c8005b2b3ea1af8237f21c50e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42d843f50f7d3249a8f80349970bbe88 = $(`<div id="html_42d843f50f7d3249a8f80349970bbe88" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0053.JPG</div>`)[0];
+                popup_3fc92e4c8005b2b3ea1af8237f21c50e.setContent(html_42d843f50f7d3249a8f80349970bbe88);
+            
+        
+
+        marker_633309edbda941988decdd1437343860.bindPopup(popup_3fc92e4c8005b2b3ea1af8237f21c50e)
+        ;
+
+        
+    
+    
+                marker_633309edbda941988decdd1437343860.setIcon(icon_3302ee4f2b4cd06c358352e5dadaed8e);
+            
+    
+            var marker_e655c513f11289e143bd8a1620b16bb8 = L.marker(
+                [45.11703360020616, 14.1959855651055],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_63c72161028f0b80f3c96b38018081a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18aff1c09ae85a74d43f854e91733cb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af30d40ca10c0c4f456917a9034e00da = $(`<div id="html_af30d40ca10c0c4f456917a9034e00da" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0056.JPG</div>`)[0];
+                popup_18aff1c09ae85a74d43f854e91733cb4.setContent(html_af30d40ca10c0c4f456917a9034e00da);
+            
+        
+
+        marker_e655c513f11289e143bd8a1620b16bb8.bindPopup(popup_18aff1c09ae85a74d43f854e91733cb4)
+        ;
+
+        
+    
+    
+                marker_e655c513f11289e143bd8a1620b16bb8.setIcon(icon_63c72161028f0b80f3c96b38018081a5);
+            
+    
+            var marker_def5d595c06f858b602ef38f065b62e2 = L.marker(
+                [45.11761859109986, 14.1979709518691],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_19ae1e9de04b668968ad5eb39fa62986 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_996bccc3dfafd247e1bed7f86f893712 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10ff188d217a1e78bb9113c857eb74dd = $(`<div id="html_10ff188d217a1e78bb9113c857eb74dd" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0067.JPG</div>`)[0];
+                popup_996bccc3dfafd247e1bed7f86f893712.setContent(html_10ff188d217a1e78bb9113c857eb74dd);
+            
+        
+
+        marker_def5d595c06f858b602ef38f065b62e2.bindPopup(popup_996bccc3dfafd247e1bed7f86f893712)
+        ;
+
+        
+    
+    
+                marker_def5d595c06f858b602ef38f065b62e2.setIcon(icon_19ae1e9de04b668968ad5eb39fa62986);
+            
+    
+            var marker_ebc043811d50b6d9c00d6ad7345ee7f6 = L.marker(
+                [45.11798079985122, 14.19748456280497],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_bb7b0e087dec6a1d49dfe961668b5c72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47dbe7fad082d735df085ea1c7b960d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a2418c7b14ffdfeb5c01573df4bda02 = $(`<div id="html_6a2418c7b14ffdfeb5c01573df4bda02" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0069.JPG</div>`)[0];
+                popup_47dbe7fad082d735df085ea1c7b960d0.setContent(html_6a2418c7b14ffdfeb5c01573df4bda02);
+            
+        
+
+        marker_ebc043811d50b6d9c00d6ad7345ee7f6.bindPopup(popup_47dbe7fad082d735df085ea1c7b960d0)
+        ;
+
+        
+    
+    
+                marker_ebc043811d50b6d9c00d6ad7345ee7f6.setIcon(icon_bb7b0e087dec6a1d49dfe961668b5c72);
+            
+    
+            var marker_543b581d52e1de7367379ed87b0eea80 = L.marker(
+                [45.11814918035601, 14.19614944030183],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_70e81a2d0bcc1b0caffe8206f15b25b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b96105230ae8717109834590bcd7ec9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fd1bd03a3fd3a71b3c8691a1e45aac7 = $(`<div id="html_7fd1bd03a3fd3a71b3c8691a1e45aac7" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0138.JPG</div>`)[0];
+                popup_8b96105230ae8717109834590bcd7ec9.setContent(html_7fd1bd03a3fd3a71b3c8691a1e45aac7);
+            
+        
+
+        marker_543b581d52e1de7367379ed87b0eea80.bindPopup(popup_8b96105230ae8717109834590bcd7ec9)
+        ;
+
+        
+    
+    
+                marker_543b581d52e1de7367379ed87b0eea80.setIcon(icon_70e81a2d0bcc1b0caffe8206f15b25b4);
+            
+    
+            var marker_e2279d980fe935e75e41f967f4e52ca4 = L.marker(
+                [45.11817502725618, 14.19609579812109],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_b51d2c343ab673942121ea202d38a3fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fdcef246af35dbeb2499740a38f4dbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e99c214a4ace896cb6a14d4e2e1ac01a = $(`<div id="html_e99c214a4ace896cb6a14d4e2e1ac01a" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0147.JPG</div>`)[0];
+                popup_8fdcef246af35dbeb2499740a38f4dbf.setContent(html_e99c214a4ace896cb6a14d4e2e1ac01a);
+            
+        
+
+        marker_e2279d980fe935e75e41f967f4e52ca4.bindPopup(popup_8fdcef246af35dbeb2499740a38f4dbf)
+        ;
+
+        
+    
+    
+                marker_e2279d980fe935e75e41f967f4e52ca4.setIcon(icon_b51d2c343ab673942121ea202d38a3fb);
+            
+    
+            var marker_0c5b67ae0005701d344edadf31940f2f = L.marker(
+                [45.11863924875973, 14.19564358047119],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_b108e6c98f9785718d1edc1034ccca20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09fc9c7b099200c0453f31a1cede4092 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80c53ec61b78f51564433a23a9ef30b2 = $(`<div id="html_80c53ec61b78f51564433a23a9ef30b2" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0199.JPG</div>`)[0];
+                popup_09fc9c7b099200c0453f31a1cede4092.setContent(html_80c53ec61b78f51564433a23a9ef30b2);
+            
+        
+
+        marker_0c5b67ae0005701d344edadf31940f2f.bindPopup(popup_09fc9c7b099200c0453f31a1cede4092)
+        ;
+
+        
+    
+    
+                marker_0c5b67ae0005701d344edadf31940f2f.setIcon(icon_b108e6c98f9785718d1edc1034ccca20);
+            
+    
+            var marker_ab09939790944e5f58273fe81f6cf1d9 = L.marker(
+                [45.11857204124745, 14.19505021376376],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_01f9c9f50739404e9fd3412224b38f41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e328bb27138732089e061a52868abac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6deb5c4679b8b5202a87af3c4f742316 = $(`<div id="html_6deb5c4679b8b5202a87af3c4f742316" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0218.JPG</div>`)[0];
+                popup_6e328bb27138732089e061a52868abac.setContent(html_6deb5c4679b8b5202a87af3c4f742316);
+            
+        
+
+        marker_ab09939790944e5f58273fe81f6cf1d9.bindPopup(popup_6e328bb27138732089e061a52868abac)
+        ;
+
+        
+    
+    
+                marker_ab09939790944e5f58273fe81f6cf1d9.setIcon(icon_01f9c9f50739404e9fd3412224b38f41);
+            
+    
+            var marker_176a45289e84f60ff34b78a714b66d67 = L.marker(
+                [45.11855588591769, 14.19541145954944],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_cb0dafc86d59e26c7421067d4acf86ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64f70a2bfedf96a67de027ce1d096744 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f332e7105530824d4e8893a9fd3c229c = $(`<div id="html_f332e7105530824d4e8893a9fd3c229c" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0240.JPG</div>`)[0];
+                popup_64f70a2bfedf96a67de027ce1d096744.setContent(html_f332e7105530824d4e8893a9fd3c229c);
+            
+        
+
+        marker_176a45289e84f60ff34b78a714b66d67.bindPopup(popup_64f70a2bfedf96a67de027ce1d096744)
+        ;
+
+        
+    
+    
+                marker_176a45289e84f60ff34b78a714b66d67.setIcon(icon_cb0dafc86d59e26c7421067d4acf86ec);
+            
+    
+            var marker_ebcc80c0612d02452d70d30178ee6f00 = L.marker(
+                [45.11851468468671, 14.1956553599054],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_9e8096fe2c540b98ba110acaaa97d23a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf7729cc5275f58306174063d0d86266 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77728f42565b7dc773c3aa848faaa4d2 = $(`<div id="html_77728f42565b7dc773c3aa848faaa4d2" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0246.JPG</div>`)[0];
+                popup_cf7729cc5275f58306174063d0d86266.setContent(html_77728f42565b7dc773c3aa848faaa4d2);
+            
+        
+
+        marker_ebcc80c0612d02452d70d30178ee6f00.bindPopup(popup_cf7729cc5275f58306174063d0d86266)
+        ;
+
+        
+    
+    
+                marker_ebcc80c0612d02452d70d30178ee6f00.setIcon(icon_9e8096fe2c540b98ba110acaaa97d23a);
+            
+    
+            var marker_4edd13553b79f7dad545c4e5c1442bd3 = L.marker(
+                [45.11852283423435, 14.19571748565305],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_57b773234ae68f7d5017a44d052a70b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c8633fc8ee0b68b372a2a4a2d2593a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e35987504c5232339dfb1c0755df709 = $(`<div id="html_8e35987504c5232339dfb1c0755df709" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0247.JPG</div>`)[0];
+                popup_9c8633fc8ee0b68b372a2a4a2d2593a2.setContent(html_8e35987504c5232339dfb1c0755df709);
+            
+        
+
+        marker_4edd13553b79f7dad545c4e5c1442bd3.bindPopup(popup_9c8633fc8ee0b68b372a2a4a2d2593a2)
+        ;
+
+        
+    
+    
+                marker_4edd13553b79f7dad545c4e5c1442bd3.setIcon(icon_57b773234ae68f7d5017a44d052a70b6);
+            
+    
+            var marker_6f0693471b0c99d09ddffe0d94a7d5b2 = L.marker(
+                [45.11815161432001, 14.19536737928805],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_de92580996a87a766501416ab3d057d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c237c40d57cdeb543b5739454352709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f93bb36ecab8257073649c27e20257b3 = $(`<div id="html_f93bb36ecab8257073649c27e20257b3" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0252.JPG</div>`)[0];
+                popup_8c237c40d57cdeb543b5739454352709.setContent(html_f93bb36ecab8257073649c27e20257b3);
+            
+        
+
+        marker_6f0693471b0c99d09ddffe0d94a7d5b2.bindPopup(popup_8c237c40d57cdeb543b5739454352709)
+        ;
+
+        
+    
+    
+                marker_6f0693471b0c99d09ddffe0d94a7d5b2.setIcon(icon_de92580996a87a766501416ab3d057d6);
+            
+    
+            var marker_211cc91874e3e041354f0808c6bb90b2 = L.marker(
+                [45.11864229194602, 14.19486498498958],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_8d3e86adc3c210fbde4262c3861ad36c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f69660b1a0ac1f56e639776a0a91e9c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d2556fab86f3f0f2ee548fb71dc0aab = $(`<div id="html_6d2556fab86f3f0f2ee548fb71dc0aab" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0298.JPG</div>`)[0];
+                popup_f69660b1a0ac1f56e639776a0a91e9c3.setContent(html_6d2556fab86f3f0f2ee548fb71dc0aab);
+            
+        
+
+        marker_211cc91874e3e041354f0808c6bb90b2.bindPopup(popup_f69660b1a0ac1f56e639776a0a91e9c3)
+        ;
+
+        
+    
+    
+                marker_211cc91874e3e041354f0808c6bb90b2.setIcon(icon_8d3e86adc3c210fbde4262c3861ad36c);
+            
+    
+            var marker_4763b97c2691b19049b21644d0fec645 = L.marker(
+                [45.11865589919749, 14.19487238770712],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_f3a207b6c1d22a5c1f951abb2e16d2ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e1c1d3c0fbfaffe72af91e307c75152 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbcbd967f0ce0641fa41cbc746a4f791 = $(`<div id="html_fbcbd967f0ce0641fa41cbc746a4f791" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0299.JPG</div>`)[0];
+                popup_3e1c1d3c0fbfaffe72af91e307c75152.setContent(html_fbcbd967f0ce0641fa41cbc746a4f791);
+            
+        
+
+        marker_4763b97c2691b19049b21644d0fec645.bindPopup(popup_3e1c1d3c0fbfaffe72af91e307c75152)
+        ;
+
+        
+    
+    
+                marker_4763b97c2691b19049b21644d0fec645.setIcon(icon_f3a207b6c1d22a5c1f951abb2e16d2ca);
+            
+    
+            var marker_b80fe6aa02751c827baf8ba296245806 = L.marker(
+                [45.11864183756277, 14.19480395235625],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_5bf4fcdadc19544deddad348c5edb318 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42837741ee3ad4b882da6b03742b86fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b258adc6c679fe48ba89c59c1d0646dc = $(`<div id="html_b258adc6c679fe48ba89c59c1d0646dc" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0324.JPG</div>`)[0];
+                popup_42837741ee3ad4b882da6b03742b86fd.setContent(html_b258adc6c679fe48ba89c59c1d0646dc);
+            
+        
+
+        marker_b80fe6aa02751c827baf8ba296245806.bindPopup(popup_42837741ee3ad4b882da6b03742b86fd)
+        ;
+
+        
+    
+    
+                marker_b80fe6aa02751c827baf8ba296245806.setIcon(icon_5bf4fcdadc19544deddad348c5edb318);
+            
+    
+            var marker_c6145e1ceb1581f69de23005a5f96d84 = L.marker(
+                [45.11866770053053, 14.19433875933155],
+                {
+}
+            ).addTo(map_b359a5b0057a940749243ab3fa6b4d62);
+        
+    
+            var icon_4e93d6fc5c0b3d3b7b20e17345800ca8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crosshairs",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b67199011c72e62854b62c362dbfce18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21921428dd26788b30cb33e288031199 = $(`<div id="html_21921428dd26788b30cb33e288031199" style="width: 100.0%; height: 100.0%;">flight_23_DJI_0369.JPG</div>`)[0];
+                popup_b67199011c72e62854b62c362dbfce18.setContent(html_21921428dd26788b30cb33e288031199);
+            
+        
+
+        marker_c6145e1ceb1581f69de23005a5f96d84.bindPopup(popup_b67199011c72e62854b62c362dbfce18)
+        ;
+
+        
+    
+    
+                marker_c6145e1ceb1581f69de23005a5f96d84.setIcon(icon_4e93d6fc5c0b3d3b7b20e17345800ca8);
+            
+</script>
+</html>

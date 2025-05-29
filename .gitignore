@@ -5,3 +5,5 @@ marker_advection/template_dir
 __pycache__
 
 *.zip
+*.JPG
+*.txt

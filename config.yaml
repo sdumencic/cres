@@ -1,0 +1,9 @@
+names:
+  0: target
+  1: boat
+  2: drifter
+nc: 3
+path: C:/Users/Stella/Documents/cres/dataset
+test: images/test
+train: images/train
+val: images/validation
