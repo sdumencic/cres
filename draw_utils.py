@@ -408,3 +408,41 @@ def get_labels_list(labels_path):
                     filtered_files.append(f'{image_file_name}_{i+1}')
 
     return filtered_files
+
+def json_bbox_to_yolo_bbox(bbox, img_width, img_height):
+    """
+    Convert COCO JSON bbox format [x_min, y_min, width, height] to YOLO format [x_center, y_center, w, h] (normalized).
+    bbox: list or tuple of [x_min, y_min, width, height]
+    img_width: int, image width in pixels
+    img_height: int, image height in pixels
+    Returns: [x_center_norm, y_center_norm, w_norm, h_norm]
+    """
+    x_min, y_min, w, h = bbox
+    x_center = x_min + w / 2
+    y_center = y_min + h / 2
+    x_center_norm = x_center / img_width
+    y_center_norm = y_center / img_height
+    w_norm = w / img_width
+    h_norm = h / img_height
+    return [x_center_norm, y_center_norm, w_norm, h_norm]
+
+def yolo_bbox_to_opencv_bbox(yolo_bbox, img_width, img_height):
+    """
+    Convert YOLO bbox format [x_center, y_center, w, h] (normalized) to OpenCV format [x_min, y_min, x_max, y_max] (pixels).
+    yolo_bbox: list or tuple of [x_center, y_center, w, h] (all normalized)
+    img_width: int, image width in pixels
+    img_height: int, image height in pixels
+    Returns: [x_min, y_min, x_max, y_max] (all int)
+    """
+    x_center, y_center, w, h = yolo_bbox
+    x_center_px = x_center * img_width
+    y_center_px = y_center * img_height
+    w_px = w * img_width
+    h_px = h * img_height
+
+    x_min = int(round(x_center_px - w_px / 2))
+    y_min = int(round(y_center_px - h_px / 2))
+    x_max = int(round(x_center_px + w_px / 2))
+    y_max = int(round(y_center_px + h_px / 2))
+
+    return [x_min, y_min, x_max, y_max]

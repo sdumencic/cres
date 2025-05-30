@@ -106,7 +106,7 @@ if __name__ == "__main__":
                        [45.4, 14.4],
                        [45.0, 14.1]])
 
-    point = np.array([[44.952006, 14.364774]])
+    point = np.array([[45, 14]])
 
     # Global to local
     test_local_points = latlon_to_local(points, base_point_test)
