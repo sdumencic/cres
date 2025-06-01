@@ -2,9 +2,8 @@ import numpy as np
 import pathlib
 import pyvista as pv
 import os
-from datetime import datetime
 
-def advect_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir, index, timestamp):
+def advect_initial_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir, index, timestamp):
 
     print(f'Getting results from ({case_dir})')
     pathlib.Path(f'{case_dir}/case.foam').touch()
@@ -14,11 +13,7 @@ def advect_marker_locations(case_dir, advection_time_step, data_dir, advection_r
     internal_mesh = mesh["internalMesh"]
 
     # load the latest drifter location files
-    latest_drifter_location_file = sorted(
-        [entry.path for entry in os.scandir(data_dir) if
-        entry.is_file() and entry.name.startswith('drifter_measurements') and entry.name.endswith('.npz')])[-1]
-    
-    print("ADVECT", latest_drifter_location_file)
+    latest_drifter_location_file = data_dir
 
     # drifter measurements
     drifter_measurements = np.load(latest_drifter_location_file)
@@ -49,10 +44,9 @@ def advect_marker_locations(case_dir, advection_time_step, data_dir, advection_r
 
     # Create mask based on non-NaN velocity values
     mask = ~np.isnan(sampled['U'][:, 0])
-    drifter_location = drifter_location[mask]
+    drifter_location = drifter_location[mask]    
 
-    np.savez_compressed(f'{advection_results_dir}/advected_marker_locations_{timestamp}.npz', drifter_location=drifter_location)
-    np.savez_compressed(f'{data_dir}/drifter_measurements_time_step_{index}_{timestamp}.npz', drifter_location=drifter_location)
+    np.savez_compressed(f'{advection_results_dir}/advected_marker_locations_{index}_{timestamp}.npz', drifter_location=drifter_location)
 
 
 if __name__ == '__main__':
@@ -63,7 +57,7 @@ if __name__ == '__main__':
     advection_time_step = 600 # desired advection time step
 
     gaussian_noise=False
-    advect_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir, 1)
+    advect_initial_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir, 1)
 
 
 
