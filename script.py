@@ -4,14 +4,15 @@ from datetime import datetime
 import numpy as np
 import os
 from geo_converter import latlon_to_local, local_to_latlon
+import shutil
 
-data_dir = f'D:/cres/marker_advection/data_dir' # measurements in npz format
-case_dir = f'D:/cres/marker_advection/template_dir/case_Cres' # OpenFOAM case
-advection_results_dir = f'D:/cres/marker_advection/advection_results_dir' # advected marker locations
+data_dir = f'C:/Users/Stella/Documents/cres/marker_advection/target_dir' # measurements in npz format
+case_dir = f'C:/Users/Stella/Documents/cres/marker_advection/template_dir/case_Cres' # OpenFOAM case
+advection_results_dir = f'C:/Users/Stella/Documents/cres/marker_advection/advection_results_dir' # advected marker locations
 advection_time_step = 600 # desired advection time step
 
 src_dir = 'C:/Users/Stella/AOSeR Dropbox/Stella Dumencic/Cres_experiment/work_folder/search/flow_fields'
-dst_dir = 'D:/cres/marker_advection/template_dir/case_Cres/0'
+dst_dir = 'C:/Users/Stella/Documents/cres/marker_advection/template_dir/case_Cres/0'
 files = sorted(os.listdir(src_dir))
 
 # Save targets to txt files
@@ -44,8 +45,8 @@ while True:
 
     print(f"Nearest file: {nearest_file} with time difference: {min_time_diff} seconds")
 
-    # if nearest_file:
-    #     shutil.copy(os.path.join(src_dir, nearest_file), os.path.join(dst_dir, 'U'))
+    if nearest_file:
+        shutil.copy(os.path.join(src_dir, nearest_file), os.path.join(dst_dir, 'U'))
     
     advect_marker_locations(case_dir, advection_time_step, data_dir, advection_results_dir, index+1, timestamp)
     index = index + 1
